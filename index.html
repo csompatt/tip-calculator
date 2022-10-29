@@ -14,22 +14,23 @@
     <main>
       <div class="control-panel">
         <h2>Bill</h2>
-        <input type="text" />
+        <input id="bill-input" type="number" />
 
         <h2>Select Tip %</h2>
-        <label for="tip-5"></label>
-        <input name="tip-amount" id="tip-5" type="radio" />
-        <label for="tip-10"></label>
-        <input name="tip-amount" id="tip-10" type="radio" />
-        <label for="tip-25"></label>
-        <input name="tip-amount" id="tip-25" type="radio" />
-        <label for="tip-50"></label>
-        <input name="tip-amount" id="tip-50" type="radio" />
-        <label for="tip-custom"></label>
-        <input name="tip-amount" id="tip-custom" type="radio" />
+        <label for="tip-5">5%</label>
+        <input name="tip-amount" id="tip-5" type="radio" value="0.05" checked />
+        <label for="tip-10">10%</label>
+        <input name="tip-amount" id="tip-10" type="radio" value="0.10" />
+        <label for="tip-25">25%</label>
+        <input name="tip-amount" id="tip-25" type="radio" value="0.25" />
+        <label for="tip-50">50%</label>
+        <input name="tip-amount" id="tip-50" type="radio" value="0.50" />
+        <label for="tip-custom">Custom</label>
+        <input name="tip-amount" id="custom-tip" type="radio" />
+        <input type="number" id="custom-tip-amount" />
 
         <h2>Number of People</h2>
-        <input type="number" />
+        <input id="number-of-people" type="number" value="1" />
       </div>
       <div class="result">
         <h3>Tip Amount</h3>
@@ -40,10 +41,10 @@
         <p>/ person</p>
         <h4 class="total-person"></h4>
 
-        <button>reset</button>
+        <button id="reset-button">reset</button>
       </div>
     </main>
 
-    <script src="./style.css" async defer></script>
+    <script src="./script.js" async defer></script>
   </body>
 </html>
